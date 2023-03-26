@@ -186,6 +186,7 @@ searchHistoryEl.addEventListener("click", function (event) {
   if (element.matches(".delete")) {
     var index = element.parentElement.getAttribute("data-index");
     searchHistorys.splice(index, 1);
+    console.log(searchHistory)
     storeHistory();
     renderHistory();
   }
