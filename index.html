@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./Assets/css/jass.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+</head>
+
+<body>
+    <div id="title">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <div
+        class="flex-row align-start align-stretch-md align-content-start align-content-stretch-md min-100-vh bg-white">
+        <div class="col-12 col-md-3 bg-white p-3">
+            <h1 class="text-primary">Search for a City: </h1>
+            <form id="search-form" class="mb-2">
+                <input id="search-input" class="form-input w-100" type="text" placeholder="San Diego">
+                <button class="btn btn-info btn-block bg-lightBlue searchBtn" type="submit">Search</button>
+            </form>
+            <!-- Add search history below submit form -->
+            <div id="division"></div>
+            <div>
+                <ul id="search-history"></ul>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-9 p-3 text-black" id="weatherDisplay">
+            <div id="result-output"></div> <!-- For current weather -->
+            <div id="five-forecast"></div>
+            <div id="result-content"></div> <!-- For 5 Day forecast -->
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
